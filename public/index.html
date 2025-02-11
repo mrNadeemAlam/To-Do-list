@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>To do</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-500 to-purple-700 min-h-screen flex justify-center items-center"
+  >
+    <div class="container bg-white w-[30%] rounded-4xl p-5 mb-72">
+      <div class="head flex items-center">
+        <span id="to_do" class="text-3xl font-bold text-slate-800"
+          >To-Do List</span
+        >
+        <img class="w-10" src="./images/icon.png" alt="" />
+      </div>
+
+      <div class="add mt-4">
+        <input
+          id="input"
+          class="bg-white py-3 pl-3 rounded-2xl focus:outline-none w-[75%]"
+          type="text"
+          placeholder="Add your task"
+        />
+        <button
+          onclick="addTask()"
+          id="btn"
+          class="bg-orange-400 w-[22%] py-3 rounded-2xl focus:outline-none text-white font-bold cursor-pointer"
+          type="button"
+        >
+          Add
+        </button>
+      </div>
+
+      <div class="task mt-4">
+        <ul id="listContainer" class="flex flex-col space-y-4"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
