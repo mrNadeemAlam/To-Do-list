@@ -25,7 +25,7 @@ function addTask(task = null) {
   }
 
   let div = document.createElement("div");
-  div.className = "flex items-center gap-2";
+  div.className = "flex items-center gap-2 w-[80%]";
 
   let img = document.createElement("img");
   if (task && task.completed) {
@@ -36,6 +36,7 @@ function addTask(task = null) {
   img.className = "w-7 cursor-pointer";
 
   let taskText = document.createElement("span");
+  taskText.className = "truncate"
   taskText.innerText = taskTextValue;
 
   if (task && task.completed) {
